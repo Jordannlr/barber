@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+{% block body_params %}{% endblock %}
+
+{% block body %}
+
+    <h1>Prenez rendez-vous</h1>
+
+{% if not app.user %}
+    <div id="rendezvous">
+    Veuillez vous connecter afin de prendre rendez-vous
+    </div>
+{% else %}
+    <div class="container">
+    <div class="formInscription" >
+
+        {{ form_start (formulaireRdv)}}
+
+            {{ form_row (formulaireRdv.phoneNumber, {'attr': {'placeholder': "Votre numéro de téléphone"}, 'label': "Numéro de téléphone"} ) }}
+            {{ form_row (formulaireRdv.date, {'attr': {'label': "Date de rendez-vous souhaité"}} )  }}         
+
+            <div class="form-group">
+                    <button type="submit" class="btn btn-success">Envoyer</button>
+            </div>
+            
+        {{ form_end (formulaireRdv)}}
+
+    </div>
+    </div>
+
+{% endif %}
+{% endblock %}

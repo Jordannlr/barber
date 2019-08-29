@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+{% block body_params %}{% endblock %}
+
+{% block body %}
+
+    <h2>Les rendez-vous</h2>
+<div class="listeRdv">
+    {% for li in liste %}
+    <p> Numéro: {{li.phoneNumber}} | Date proposée: {{li.date}} &nbsp; &nbsp; &nbsp;
+        <input type="checkbox"> Supprimer
+    </p>
+
+    {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block body_params %}{% endblock %}
+
+{% block body %}
+
+
+        <h2> Pour vous messieurs: </h2>
+        
+<div id="prestation">
+    {% for coupeH in coupesH %}
+        <div id="coupes">
+            <p class="myPix"><img src ={{ coupeH.image }} alt=""></p>
+            <p>Style: {{ coupeH.titre }} </p>
+            <p>Description: {{ coupeH.description }} </p>
+            <p> Tarifs : {{ coupeH.tarif }}€ </p>
+            
+            
+</div>
+{% endfor %}
+</div>  
+
+{% endblock %}

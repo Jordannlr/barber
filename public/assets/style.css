@@ -1,0 +1,211 @@
+/* Css Navbar */
+
+.navbar {
+    background-color: black !important;
+    color: white !important;
+}
+
+.navbar .nav-item :hover{
+    background-color: white !important;
+    color: black !important;
+}
+
+.navbar .navbar-nav li a {
+
+    color: white !important;
+    opacity: 0.99 !important;
+}
+    
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar-nav.navbar-right {
+    position: absolute;
+    right: 0%;
+    transform: translatex(-50%);
+}
+/* ------------------------------------------------------------- */
+
+#accueil {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
+    transform: translateY(-50%);
+}
+
+#accueil h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* ------------------------------------------------------------- */
+
+
+
+h3 {
+
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50vh;
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    font-family: -webkit-body;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: "pintgram", serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50vh;
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    font-family: -webkit-body;
+    font-weight: bold;
+}
+
+h2 {
+    
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 4px black;
+    font-family: "pintgram", serif;
+    font-size: 100px;
+}
+/* ------------------------------------------------------------- */
+
+
+/* Css formulaires */
+.formArticle {
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    background-color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+#form {
+    background-color: rgba(0,0,0,.5);
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.04); 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    color: black;
+    font-weight: bold;
+}
+/* ------------------------------------------------------------- */
+
+
+/* Css block coupes */
+
+#prestation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#coupes {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: inline-start;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.01);
+    padding: 10px;
+}
+
+#coupes .img {
+    border-radius: 30px;
+}
+
+.myPix {
+    background-color: rgba(0, 0, 0, 0.04); 
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/* ------------------------------------------------------------- */
+
+
+/* Css Fond d'ecran */
+
+
+body {
+    background-size: cover;
+}
+
+
+/* ------------------------------------------------------------- */
+
+
+@font-face {
+    font-family: "pintgram";
+    src: url("pintgram/Pintgram-Regular.ttf");
+    font-style: normal;
+  }
+  
+
+
+ /* ------------------------------------------------------------- */
+/* MediaQuery 924+ */
+@media screen and (max-width: 924px) {
+    #accueil h1 {
+        font-size: 28px;
+    }
+}
+/* MediaQuery 654+ */
+@media screen and (max-width: 654px) {
+    #accueil h1 {
+        font-size: 18px;
+    }
+    
+}
+
+/* MediaQuery 764+ */
+@media screen and (max-width: 764px) {
+    #coupes {
+        align-content: center;
+    }
+}
+
+/* ------------------------------------------------------------- */
+
+#rendezvous {
+    background-color: black;
+    color: red;
+    text-align: center;
+    font-size: 30px;
+}
+
+.listeRdv {
+    background-color: rgba(0, 0, 0, 0.04);
+    
+    text-align: center;
+    font-size: 16px;
+}
+
